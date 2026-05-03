@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şiir Köşesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Şiir Kartı -->
+        <div class="siir-karti">
+            <h1 class="siir-baslik">Gece ve Umut</h1>
+            <p class="siir-metni">
+                Yıldızlar dökülürken sessizce yere,<br>
+                Bir fısıltı yükselir derinlerden.<br>
+                Umut, görünmez bir el gibi uzanır,<br>
+                Karanlığın içindeki en aydınlık yerden.
+            </p>
+        </div>
+
+        <!-- Şiir Görseli -->
+        <div class="siir-gorsel-alani">
+            <img src="https://picsum.photos/400/300" alt="Şiir Görseli" class="siir-gorsel">
+        </div>
+    </div>
+
+</body>
+</html>
+/* Genel Sayfa Ayarları */
+body {
+    background-color: #f4f7f6; /* Göz yormayan hafif gri/mavi bir arka plan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Georgia', serif; /* Şiir için daha estetik, tırnaklı bir font */
+}
+
+/* Ana Taşıyıcı */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Şiir Kartı Tasarımı */
+.siir-karti {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 30px; /* Yumuşak köşeler */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Zarif, derinlik katan gölge */
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.siir-baslik {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.siir-metni {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    letter-spacing: 0.5px;
+}
+
+/* Görsel Tasarımı */
+.siir-gorsel-alani {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.siir-gorsel {
+    width: 100%; /* Kartla aynı hizada olması için */
+    max-width: 500px; 
+    height: auto;
+    border-radius: 30px; /* Görselin köşeleri de yumuşak */
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
