@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şiir Köşesi</title>
+    <title>Şiir Köşesi - İncitme</title>
     <style>
-        /* CSS kodlarını buraya (style etiketleri arasına) ekliyoruz */
         body {
             background-color: #f4f7f6; 
             display: flex;
@@ -13,6 +12,7 @@
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            padding: 40px 0; /* Sayfa başında ve sonunda boşluk olması için */
             font-family: 'Georgia', serif;
         }
 
@@ -20,16 +20,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            max-width: 500px;
+            max-width: 550px; /* Şiir uzun olduğu için biraz genişlettim */
             width: 90%;
-            padding: 20px 0;
         }
 
-        /* İstediğin yumuşak köşeli şiir kartı */
         .siir-karti {
             background: #ffffff;
             padding: 40px;
-            border-radius: 30px; /* Yumuşak köşeler */
+            border-radius: 30px; 
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             text-align: center;
             margin-bottom: 25px;
@@ -38,25 +36,33 @@
         }
 
         .siir-baslik {
-            font-size: 1.8rem;
-            color: #333;
+            font-size: 2rem;
+            color: #2c3e50;
             margin-top: 0;
+            margin-bottom: 25px;
             font-style: italic;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
         }
 
         .siir-metni {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #555;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #444;
+            margin: 0;
         }
 
-        /* İstediğin yumuşak köşeli ve orta büyüklükte görsel */
+        .siir-kitasi {
+            margin-bottom: 20px; /* Kıtalar arası boşluk */
+        }
+
         .siir-gorsel {
             width: 100%; 
-            max-width: 500px; /* Kartla aynı genişlikte */
+            max-width: 550px; 
             height: auto;
-            border-radius: 30px; /* Görselin köşeleri de yumuşak */
+            border-radius: 30px; 
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
         }
     </style>
 </head>
@@ -66,36 +72,48 @@
         <!-- Şiir Kartı -->
         <div class="siir-karti">
             <h1 class="siir-baslik">İncitme</h1>
-            <p class="siir-metni">
-              <p>  Gölgesinde otur amma <br>
-Yaprak senden incinmesin.<br>
-Temizlen de gir mezara<br>
-Toprak senden incinmesin.</p>
+            
+            <div class="siir-metni">
+                <div class="siir-kitasi">
+                    Gölgesinde otur amma <br>
+                    Yaprak senden incinmesin.<br>
+                    Temizlen de gir mezara<br>
+                    Toprak senden incinmesin.
+                </div>
 
-<p>Yollar uzun, yollar ince<br>
-Yol kısalır aşk gelince<br>
-Yat kurban ol İsmail’ce<br>
-Bıçak senden incinmesin.</p>
+                <div class="siir-kitasi">
+                    Yollar uzun, yollar ince<br>
+                    Yol kısalır aşk gelince<br>
+                    Yat kurban ol İsmail’ce<br>
+                    Bıçak senden incinmesin.
+                </div>
 
-<p>Burdayım de ararlarsa<br>
-Doğru söyle sorarlarsa<br>
-Tabutuna sararlarsa<br>
-Bayrak senden incinmesin.</p>
-<p>
-İl göçsün göçtüğün vakit<br>
-Yol yansın geçtiğin vakit<br>
-Suyundan içtiğin vakit<br>
-Kaynak senden incinmesin.</p>
+                <div class="siir-kitasi">
+                    Burdayım de ararlarsa<br>
+                    Doğru söyle sorarlarsa<br>
+                    Tabutuna sararlarsa<br>
+                    Bayrak senden incinmesin.
+                </div>
 
-<p>Toz konmasın sakın sana<br>
-Hakkı geçer halkın sana<br>
-Gücenmesin yakın sana<br>
-Uzak senden incinmesin.
-            </p>
+                <div class="siir-kitasi">
+                    İl göçsün göçtüğün vakit<br>
+                    Yol yansın geçtiğin vakit<br>
+                    Suyundan içtiğin vakit<br>
+                    Kaynak senden incinmesin.
+                </div>
+
+                <div class="siir-kitasi">
+                    Toz konmasın sakın sana<br>
+                    Hakkı geçer halkın sana<br>
+                    Gücenmesin yakın sana<br>
+                    Uzak senden incinmesin.
+                </div>
+            </div>
         </div>
 
         <!-- Görsel Bölümü -->
-        <img src="https://picsum.photos/500/350" alt="Şiir Görseli" class="siir-gorsel">
+        <img src="karakoc-288-018.jpg" alt="Şiir Görseli" class="siir-gorsel">
+        <!-- / BURADAKİ "fotografiniz.jpg" YAZISINI SİLİP DOSYAYA ATTIĞINIZ RESMİN ADINI YAZIN / -->
     </div>
 
 </body>
